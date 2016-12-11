@@ -20,6 +20,21 @@ Configure a linux server to host a web application using apache2, mod_wsgi, flas
 ### AWS Item Catalog Public Endpoint
 http://ec2-35-165-47-126.us-west-2.compute.amazonaws.com/
 
+### List Of Configurations Made
+1. updated the system and its packages
+1. added couple of new users student/grader
+1. Disabled remote root login
+1. Enabled key based authentication
+1. Disabled password authentication
+1. Gave sudo permissions to the new users
+1. Enabled remote login via pub key for the new users
+1. Changed default SSH port to 2200
+1. Updated firewall rules using ufw (www, ntp, 2200)
+1. Added a new wsgi site item-catalog in apache2 sites-available
+1. Installed postgres, created users, role, database etc.,
+1. Installed flask and supporting packages for item-catalog to run
+
+
 ### Udacity RSA Key:
 ```shell
 -----BEGIN RSA PRIVATE KEY-----
@@ -50,3 +65,9 @@ id3xJy+rdE2qoyqU8NH93OF8VmNFLQJB6U3ovvHws60bGQIjys0jPczd0dR2WFE5
 uXFVnfNNxZN+YwnlnofHs1920OPuwz6ThuHaxFYn43gqtH9zrkifSHw=
 -----END RSA PRIVATE KEY-----
 ```
+
+
+### Third Party Resources:
+* https://www.digitalocean.com/community/tutorials/how-to-deploy-a-flask-application-on-an-ubuntu-vps
+* http://flask.pocoo.org/docs/0.11/deploying/mod_wsgi/
+* https://httpd.apache.org/docs/2.4/vhosts/name-based.html
