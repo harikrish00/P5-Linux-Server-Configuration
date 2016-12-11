@@ -2,9 +2,9 @@
 Configure a linux server to host a web application using apache2, mod_wsgi, flask and postgres
 
 ### System Info
-Server: AWS
-IP: 35.165.47.126
-SSH Port: 2200
+* Server: AWS
+* IP: 35.165.47.126
+* SSH Port: 2200
 
 ### Software Summary
 1. Apache2
