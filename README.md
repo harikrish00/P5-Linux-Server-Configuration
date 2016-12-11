@@ -45,6 +45,7 @@ http://ec2-35-165-47-126.us-west-2.compute.amazonaws.com/
 1. Set the $PYTHONPATH to include the project folder so that apache can find it
 1. Under the item-catalog project folder, create a app.wsgi script file which will import the application
 1. Create user, database, grant permissions in Postgres
+1. set database url as environment variable in /etc/apache2/envvars
 1. Test the application by accessing the public IP
 
 ### User `garder`s RSA key (no passphrase):
